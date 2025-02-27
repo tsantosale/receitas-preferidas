@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:opsz,wght@14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@600&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #1F1517;
+    color: #FFFF;
+}
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+a {
+    text-decoration:none;
+}
+ul {
+    list-style: none;
+}
+nav {
+    max-width: 1120px;/*garantir que não vai ficar maior e desconfigurada*/
+    margin: auto;
+    padding: 1.5rem 2rem;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; /*separa os conteúdos*/
+    align-items: center;
+}
+.logo {
+    font-family: Teko;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;/*não usar maiuscula no HTML é uma boa prática de acessibilidade*/
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: #FFF2E780;
+}
+.github {
+    color: #FFF2E7;
+    font-weight: 600;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.principal {
+    background: #181012;/*div class principal foi criada para que o background não fique preso a largura dos elementos em hero*/
+}
+.hero {
+    max-width: 1120px;
+    height: 60vh; /*60% da altura da tela do navegador*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem; /* separa os conteúdos um do outro*/
+
+    padding: 0rem 0rem;
+    margin: auto;
+
+    overflow: clip; /* os elementos em volta vão sobrepor*/
+}
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.destaque {
+    font-family: Epilogue;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.marrom {
+    color: #A45A49;
+}
+.amarelo {
+    color: #E7A80E
+}
+h1 {
+    font-family: Monteserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+hr {
+    border-color: #A45A49;
+}
+.hero-subtitulo {
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hero-imagens-container {
+    width: 100%;
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+}
+.hero-imagens-container > figure > img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.botao-conainer {
+    width: 200%;
+    max-width: 1120px;
+    margin: auto;
+    transform: translate("0, -50%");
+}
+button {
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    background: #A45A49;
+}
+.todos-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 25rem;
+}
+.receitas {
+    display:flex;
+    flex-direction: column;
+
+    max-width: 1220px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+.receitas-cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.receitas-titulo {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF2E7;
+}
+.receitas-subtitulo {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #C7BAB3;
+}
+.receitas-card-container {
+    padding: 0rem 10 rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.receitas-card {
+    background: #241A1C;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex; /* vai agrupar as informações dentro da div*/
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    margin-top: 2rem;
+}
+.receitas-card-cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;/*para separar os conteudos que estão na mesma linha*/
+    align-items: end;/* graças ao space-between quando aplica end o conteúdo se organiza nas duas extremidades do container*/  
+}
+.receitas-card-cabecalho-detalhes {
+    display: flex; /*necessário para aplicar gap*/
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.receita-titulo {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFF2E7
+}
+.receita-avaliacao {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #756A67;
+}
+.receita-descricao {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #C7BAB3;
+}
+.receita-autor {
+    display:flex; /*vai agrupar o texto e imagem em linha*/
+    align-items: center;
+    gap: 0.5rem;
+}
+.receita-autor > img {
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+.receita-autor-nome {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #C7BAB3;
+}
+footer {
+    padding: 4rem;
+    display: flex; /*agrupa o conteudo*/
+    flex-direction: column; /*alinha o conteudo em coluna*/
+    align-items: center; /*alinha o conteudo na horizontal*/
+    gap: 0.5rem;
+    background: #23181A;
+}
+.footer-copy {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFF2E7;
+}
+.footer-autor {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 242, 231, 0.50);
+}
