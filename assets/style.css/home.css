@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:opsz,wght@14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@600&display=swap');
+
+:root {
+    --bg-primary-color: #1F1517;
+    --bg-second-color: #181012;
+
+    --details-color: #FFF2E7;
+    --border-color: #A45A49;
+
+    --font-primary-color: #FFFF;
+    --font-second-color: #A45A49;
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--bg-primary-color);
+    color: var(--font-primary-color);
+    font-family: Epilogue, sans-serif;
+    font-weight: 500;
+}
+h1 {
+    font-family: Monteserrat;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.highlight_brown {
+    color: var(--font-second-color);
+    font-family: Epilogue;
+    font-size: .75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/*Menu*/
+.menu {
+    padding: 1rem 2rem;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: .5px solid var(--border-color);
+}
+.menu__logo {
+    font-family: Teko;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.menu__list {
+    display: none;
+}
+.github {
+    color: var(--font-primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.github:hover {
+    text-decoration: none;
+    color: var(--font-second-color);
+    transform: scale(1.5rem);
+}
+
+/*Slider main*/
+.slider__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+.slider__subtitle {
+    color: var(--details-color);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .5rem 0rem;
+}
+hr {
+    border-color: var(--border-color);
+}
+.slider__image {
+    display: none;
+}
+
+/*Cards Receitas*/
+.cards__all {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem 2rem;
+    gap: 2rem;
+}
+.cards__title {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.cards__subtitle {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--details-color);
+    padding: .5rem 0rem;
+}
+.card {
+    border: 2px solid var(--border-color);
+    background: transparent;
+}
+.card_status {
+    padding: 1rem;
+}
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+}
+.btn {
+    background: var(--border-color);
+    border: none;
+}
+.btn:hover {
+    border: none;
+    background: linear-gradient(135deg, var(--bg-second-color), var(--border-color));
+}
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--border-color);
+  }
+
+/*Contato*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+.contact__social {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem
+}
+.contact__icon {
+    color: var(--details-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0rem 1rem 2rem 1rem;
+    font-weight: 100;
+}
+
+/*Responsividade
+@media (min-width: 700px) {
+    .menu {
+        max-width: 1120px;
+        margin: auto;
+    }
+    .menu__list {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        color: var(--font-primary-color);
+    }
+}*/
