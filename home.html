@@ -7,16 +7,17 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.css/home.css">
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/home.css">
 </head>
 <body>
     <header>
         <nav class="menu">
             <span class="menu__logo">Ale Torres</span>
             <ul class="menu__list">
-                <li><a>Home</a></li>
-                <li><a>Receitas</a></li>
-                <li><a>Sobre</a></li>
+                <li class="menu__item"><a>Home</a></li>
+                <li class="menu__item"><a  href="#receitas">Receitas</a></li>
+                <li class="menu__item"><a  href="#contato">Contato</a></li>
             </ul>
             <a class="github" href="https://github.com/tsantosale">Github</a>    
         </nav>
@@ -32,50 +33,52 @@
                 <hr/>
             </header>
            <div class="slider__image">
-                <figure><img src="./assets/image/image 08.jpg"/></figure>
+                <img src="./assets/image/slider_top.jpg"/>
             </div>
         </section>
 
         <!--Cards - feito com bootstrap-->
         <section class="cards__all">
-            <div class="cards__header">
+            <div id="receitas" class="cards__header">
                 <span class="cards__span highlight_brown">receitas</span>
                 <h3 class="cards__title">Confira as últimas receitas</h3>
             </div>
-            <!--Card 1-->
-            <div class="card" style="width: 20rem;">
-                <span class="card_status">café da manhã ☕</span>
-                <img src="./assets/image/Dahl-de-lentilha.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Toast com chocolate</h5>
-                <p class="card-text">Uma combinação perfeita para os amantes do agridoce.</p>
-                <a href="#" class="btn btn-primary">Modo de preparo</a>
+            <div class="cards">
+                <!--Card 1-->
+                <div class="card" style="width: 20rem;">
+                    <span class="card_status">café da manhã ☕</span>
+                    <img src="./assets/image/Dahl-de-lentilha.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Toast com chocolate</h5>
+                    <p class="card-text">Uma combinação perfeita para os amantes do agridoce.</p>
+                    <a href="#" class="btn btn-primary">Modo de preparo</a>
+                    </div>
                 </div>
-            </div>
-            <!--Card 2-->
-            <div class="card" style="width: 20rem;">
-                <span class="card_status">almoço 🥙</span>
-                <img src="./assets/image/Dahl-de-lentilha.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Dahl de lentilha</h5>
-                <p class="card-text">Um prato rico em proteína e sabor. Simples de fazer e fica uma delícia.</p>
-                <a href="#" class="btn btn-primary">Modo de preparo</a>
+                <!--Card 2-->
+                <div class="card" style="width: 20rem;">
+                    <span class="card_status">almoço 🥙</span>
+                    <img src="./assets/image/Dahl-de-lentilha.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Dahl de lentilha</h5>
+                    <p class="card-text">Um prato rico em proteína e sabor. Simples de fazer e fica uma delícia.</p>
+                    <a href="#" class="btn btn-primary">Modo de preparo</a>
+                    </div>
                 </div>
-            </div>
-            <!--Card 3-->
-            <div class="card" style="width: 20rem;">
-                <span class="card_status">jantar 🍝</span>
-                <img src="./assets/image/Dahl-de-lentilha.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Cuscuz marroquino</h5>
-                <p class="card-text">Um coringa que combina com qualquer vegetal e fica pronto em poucos minutos.</p>
-                <a href="#" class="btn btn-primary">Modo de preparo</a>
+                <!--Card 3-->
+                <div class="card" style="width: 20rem;">
+                    <span class="card_status">jantar 🍝</span>
+                    <img src="./assets/image/Dahl-de-lentilha.jpeg" class="card-img-top" alt="Imagem Dahl de Lentilha em um prato acompanhado por arroz e vagem cozida">
+                    <div class="card-body">
+                    <h5 class="card-title">Cuscuz marroquino</h5>
+                    <p class="card-text">Um coringa que combina com qualquer vegetal e fica pronto em poucos minutos.</p>
+                    <a href="#" class="btn btn-primary">Modo de preparo</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!--Contato Mídias Sociais-->
-        <section class="contact">
+        <section id="contato" class="contact">
             <span class="contact__span highlight_brown">contato</span>
             <h5>Fale comigo</h5>
             <ul class="contact__social">
