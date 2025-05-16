@@ -79,6 +79,14 @@ footer {
     font-weight: 100;
 }
 /**Responsividade**/
+@media (max-width: 410px) {
+  .cards .card {
+    width: 100% !important;
+    max-width: 22rem; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media (min-width: 800px) {
 /*Cards*/
 .cards {
@@ -129,9 +137,13 @@ footer {
         padding-left: 4rem;
     }
     .contact h5 {
-       font-size: 2rem;
+       font-size: 1.5rem;
     }
     .contact__icon {
-        font-size: 3rem;
+        font-size: 2.8rem;
+    }
+    /*Rodapé*/
+    footer {
+        padding: 0rem 0rem 0rem 4rem;
     }
 }

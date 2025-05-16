@@ -125,14 +125,14 @@ footer {
         padding: 1rem 0rem;
     }
     .menu__item a  {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-decoration: none;
         text-transform: uppercase;
         color: var(--font-primary-color);
     }
 
-    /*Rodapé*/
+    /*Rodapé
     footer {
         padding-left: 2rem;
-    }
+    }*/
 }
