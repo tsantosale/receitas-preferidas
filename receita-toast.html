@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita - Toast com Chocolate</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/receitas.css">
+</head>
+<body>
+    <!--Menu-->
+    <header>
+        <nav class="menu">
+            <span class="menu__logo">Ale Torres</span>
+            <ul class="menu__list">
+                <li class="menu__item"><a>Home</a></li>
+                <li class="menu__item"><a  href="#receitas">Receitas</a></li>
+                <li class="menu__item"><a  href="#contato">Contato</a></li>
+            </ul>
+            <a class="github" href="https://github.com/tsantosale">Github</a>    
+        </nav>
+    </header>
+
+    <main>
+        <section id="receitas" class="header">
+            <div class="header__title">
+                <span class="highlight_brown">receita</span>
+                <h1>Toast com chocolate</h1>
+                <p>café da manhã ☕</p>
+            </div>
+            <img class="header_image" src="./assets/image/toast-chocolate.jpeg" alt="">
+        </section>
+
+        <div class="ingredients box">
+            <span class="box__title">Ingredientes</span>
+            <ul class="list">
+                <li class="ingredients__item">1 fatia de pão - com pão de fermentação natural fica ainda mais gostoso!</li>
+                <li class="ingredients__item">1 c sp de manteiga vegetal</li>
+                <li class="ingredients__item">Lascas de chocolate - picar pedaços menores da barra com uma faca</li>
+            </ul>
+        </div>
+
+        <div class="preparing box">
+            <span class="box__title">Modo de preparo</span>
+            <ul class="list">
+                <li>Passar a manteiga veg na fatia de pão</li>
+                <li>Levar para frigideira até dourar o lado com a manteiga</li>
+                <li>Virar e adicionar o chocolate na parte amanteigada - foi por isso que cortamos em lascas, para ter pedaços menores e ele derreter com o calor</li>
+                <li>Pronto! Agora é só apagar o fogo, colocar em um prato e se deliciar.</li>
+            </ul>
+        </div>
+
+        <div class="like-container">
+            <button id="likeButton">
+                <i class="bi bi-suit-heart-fill"></i>
+            </button>
+            <span id="likeCount">0 curtidas</span>
+        </div>
+        
+
+         <!--Contato Mídias Sociais-->
+         <section id="contato" class="contact">
+            <span class="contact__span highlight_brown">contato</span>
+            <h5>Fale comigo</h5>
+            <ul class="contact__social">
+                <li>
+                <a class="contact__link" href="https://github.com/tsantosale" target="_blank">
+                    <i class="contact__icon bi bi-github"></i>
+                </a>
+                </li>
+                <li>
+                <a class="contact__link" href="https://www.linkedin.com/in/alessandra-torres-43661157/" target="_blank">
+                    <i class="contact__icon bi bi-linkedin"></i>
+                </a>
+                </li>
+                <li>
+                <a class="contact__link" href="https://www.instagram.com/ale.storres/" target="_blank">
+                    <i class="contact__icon bi bi-instagram"></i>
+                </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-copy">Copyright &lt;ALE TORRES /&gt; 2025</p>
+        <p class="footer-autor">Feito com muito ❤ por Alessandra Torres</p>
+    </footer>
+    
+    <script src="./assets/js/receita.js"></script>
+</body>
+</html>

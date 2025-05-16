@@ -1,0 +1,118 @@
+/*Cabeçalho*/
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 2rem 1rem;
+}
+.header_image {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/*Box - Ingredientes e Modo de preparo*/
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+.box__title {
+    font-size: 1.8rem;
+    color: var(--border-color);
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.list li {
+    list-style-type: disc;
+    list-style-position: inside; 
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+/*Gostei*/
+.like-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem 2rem;
+    gap: .5rem;
+   
+}
+#likeButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.bi-suit-heart-fill {
+    font-size: 2.5rem;
+    color: var(--details-color);
+}
+
+/**Rodapé**/
+footer {
+    padding: 1rem 2rem;
+}
+
+@media (min-width: 500px) {
+    .header_image {
+        max-width: 600px;
+        height: 600px;
+    }
+    
+}
+@media (min-width: 1200px) {
+    li {
+        font-size: 1.5rem;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;   
+        gap: 10rem;
+    }
+    .header__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__title span,
+    .header__title p {
+        font-size: 1.5rem;
+    }
+    .header_image {
+        width: 1000px;
+        height: 600px;
+    }
+
+    /*Box - Ingredientes e Modo de preparo*/
+    .box__title {
+        font-size: 2rem;
+    }
+    /*Contato*/
+    .contact span,
+    .contact h5 {
+        font-size: 1.5rem;
+    }
+    .contact__icon {
+        font-size: 3rem;
+    }
+    /*Rodapé*/
+    footer {
+        display: flex;
+        flex-flow: column;
+        padding: 2rem;
+        margin: 2rem 1rem;
+        font-weight: 100;
+    }
+}
